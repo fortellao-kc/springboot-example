@@ -28,6 +28,7 @@ public class TestController {
 		Map<String, String> object = new HashMap<>();
 		object.put("name", environment.getProperty("example.api.name", "Integration Ninjas"));
 		object.put("email", environment.getProperty("example.api.email", "integrationninjas@gmail.com"));
+        object.put("version", environment.getProperty("1.0.1", "0.0.1"));
 		return object;
 	}
 
